@@ -51,11 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AIController.cs" />
      <Compile Include="Assets\colorChanger.cs" />
      <Compile Include="Assets\Scripts\cameraFollow.cs" />
      <Compile Include="Assets\Scripts\colourChanger.cs" />
      <Compile Include="Assets\Scripts\GameBrain.cs" />
      <Compile Include="Assets\Scripts\playerTank.cs" />
+     <Compile Include="Assets\Sway.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
