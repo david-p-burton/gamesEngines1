@@ -6,13 +6,10 @@ public class playerTank : MonoBehaviour {
 
 	public float movementSpeed;
 	public float rotationalSpeed;
-//
-//	private Rigidbody rb;
+	public GameObject bulletPrefab;
+	public Transform bulletSpawn;
 
-	// Use this for initialization
 	void Start () {
-//		ROLLING BALL MOVEMENT
-//		rb = GetComponent<Rigidbody>();
 	}
 
 	void FixedUpdate ()
@@ -22,20 +19,27 @@ public class playerTank : MonoBehaviour {
 		var vert = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
 
 		transform.Rotate(0, horz, 0);
-		transform.Translate(0, 0, vert);
-
-//		ROLLING BALL MOVEMENT
-//		float moveHorizontal = Input.GetAxis ("Horizontal");
-//		float moveVertical = Input.GetAxis ("Vertical");
-//
-//		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
-//
-//		rb.AddForce (movement * speed * 10);
-
+		transform.Translate (0, 0, vert);
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
+
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			rootyTootyPointNShooty();
+		}
 		
+	}
+
+	void rootyTootyPointNShooty()	{
+
+		var bullet = (GameObject)Instantiate (
+			             bulletPrefab,
+			             bulletSpawn.position,
+			             bulletSpawn.rotation);
+
+		bullet.GetComponent<Rigidbody> ().velocity = bullet.transform.forward * 10;
+
+		Destroy (bullet, 5.0f);
 	}
 }
