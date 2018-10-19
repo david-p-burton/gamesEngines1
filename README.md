@@ -11,3 +11,10 @@ An example of something similar to what this project hopes to achieve can be see
 https://youtu.be/fpViZkhpPHk?t=112
 
 It is my hope that I will produce something in essence similar to this. I have more of an idea of different sound frequencies corresponding to different colours. I will also separate the colours of smoke or particle effects generated more than in the video so as to produce a more distinguishable effect for when the frequency is heard in the song.
+
+
+References;
+https://docs.unity3d.com/Manual/PartSysExhaust.html - it is my hope to take this tutorial as a starter and greatly expand on it for this project.
+
+http://buildnewgames.com/particle-systems/
+
