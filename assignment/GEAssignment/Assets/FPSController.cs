@@ -45,6 +45,7 @@ public class FPSController : MonoBehaviour
         Quaternion rot = Quaternion.AngleAxis(angle, transform.right);
 
         transform.rotation = rot * transform.rotation;
+
     }
 
     void Walk(float units)

@@ -91,7 +91,6 @@ public class audioVisualizer : MonoBehaviour
     {
         for (int i = 0; i < elements.Count; i++)
         {
-            print(i);
             Vector3 ls = elements[i].transform.localScale;
             ls.y = Mathf.Lerp(ls.y, (audioAnalyzer.bands[i] * scale), Time.deltaTime * 3.0f);
             elements[i].transform.localScale = ls;

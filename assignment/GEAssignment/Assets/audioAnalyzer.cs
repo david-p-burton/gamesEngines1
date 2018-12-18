@@ -3,6 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.Audio;
 
+/*
+     * 20-60 - Subbase
+     * 60-250 - Bass
+     * 250-500 - Low midrange
+     * 500 - 2Khz - Midrange
+     * 2Khz - 4Khz - Upper midrange
+     * 4Khz - 6Khz - Presence
+     * 6Khz - 20Khz - Brilliance
+*/
 [RequireComponent(typeof(AudioSource))]
 public class audioAnalyzer : MonoBehaviour
 {
@@ -38,14 +47,15 @@ public class audioAnalyzer : MonoBehaviour
             average /= width;
             bands[i] = average;
         }
-        print("This is the bands length; " + bands.Length);
+        //print("This is the bands length; " + bands.Length);
     }
 
-    // Update is called once per frame
+
+
     void Update()
     {
         audioSource.GetSpectrumData(spectrum, 0, FFTWindow.Blackman);
 
-        GetBands();
+        //GetBands();
     }
 }
