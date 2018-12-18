@@ -69,6 +69,7 @@
     <Compile Include="Assets\gameSetUp.cs" />
     <Compile Include="Assets\holderMovement.cs" />
     <Compile Include="Assets\particles.cs" />
+    <Compile Include="Assets\rotate.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/GitHub/gamesEngines1/gamesEngines1/assignment/GEAssignment/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

@@ -23,5 +23,6 @@ public class holderMovement : MonoBehaviour {
         z = Mathf.Sin(timeCounter) * radius;
 
         transform.position = new Vector3(x, y, z);
-	}
+        transform.RotateAround(Vector3.zero, Vector3.up, 20 * Time.deltaTime);
+    }
 }
