@@ -65,9 +65,11 @@
     <Compile Include="Assets\audioAnalyzer.cs" />
     <Compile Include="Assets\audioVisualizer.cs" />
     <Compile Include="Assets\BPMFinder.cs" />
+    <Compile Include="Assets\cameraRotation.cs" />
     <Compile Include="Assets\FPSController.cs" />
     <Compile Include="Assets\gameSetUp.cs" />
     <Compile Include="Assets\holderMovement.cs" />
+    <Compile Include="Assets\innerRoomWall.cs" />
     <Compile Include="Assets\particles.cs" />
     <Compile Include="Assets\rotate.cs" />
     <Reference Include="UnityEditor.StandardEvents">
