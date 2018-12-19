@@ -47,7 +47,7 @@ public class audioAnalyzer : MonoBehaviour
             average /= width;
             bands[i] = average;
         }
-        print("This is the bands length; " + bands.Length);
+        //print("This is the bands length; " + bands.Length);
     }
 
 
