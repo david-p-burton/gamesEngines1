@@ -14,6 +14,7 @@ public class cameraRotation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         this.transform.LookAt(focus.transform);
+        this.transform.RotateAround(Vector3.zero, Vector3.up, 20 * Time.deltaTime);
 		
 	}
 }
