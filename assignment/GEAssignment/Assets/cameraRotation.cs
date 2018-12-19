@@ -9,6 +9,7 @@ public class cameraRotation : MonoBehaviour {
     private bool swapping;
     private Vector3 start;
     private Vector3 end;
+    //48
     private float barFlip = 48;
 
 	// Use this for initialization
@@ -31,14 +32,12 @@ public class cameraRotation : MonoBehaviour {
         {
             this.transform.RotateAround(Vector3.zero, Vector3.up, -20 * Time.deltaTime);
         }
-
-        print(swapping);
     }
 
     void transport(Vector3 loc)
     {
-        //this.transform.position = loc;
-        this.transform.position = Vector3.Lerp(transform.position, loc, Time.deltaTime * 2.0f);
+        this.transform.position = loc;
+        //this.transform.position = Vector3.Lerp(transform.position, loc, Time.deltaTime * 2.0f);
     }
 
     private void LateUpdate()
@@ -48,6 +47,7 @@ public class cameraRotation : MonoBehaviour {
 
         if (count % barFlip == 0)
         {
+
             if (swapping == true)
             {
                 swapping = false;

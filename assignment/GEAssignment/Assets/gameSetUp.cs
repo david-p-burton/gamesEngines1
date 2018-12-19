@@ -4,26 +4,16 @@ using UnityEngine;
 
 public class gameSetUp : MonoBehaviour {
 
-    private Component[] tests;
+    //private Component[] tests;
+
+    public ParticleSystem pYC;
 
     // Use this for initialization
     void Start()
     {
-        //tests = GetComponentsInChildren<ParticleSystem>();
-
-        var test = GameObject.Find("particleYellowCenter");
-        print("after pYC found");
-        foreach(ParticleSystem use in tests)
-        {
-            var main = use.main;
-            main.gravityModifier = 10;
-            print("hello");
-        }
-
     }
 	// Update is called once per frame
 	void Update ()
     {
-		
 	}
 }
