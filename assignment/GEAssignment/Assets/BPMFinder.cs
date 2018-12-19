@@ -8,6 +8,7 @@ public class BPMFinder : MonoBehaviour {
     private float beatInterval, beatTimer, beatIntervalDiv8, beatTimerDiv8 ;
     public static bool beatFull, beatDiv8;
     public static int beatCountFull, beatCountDiv8;
+    public float barCounter;
 
     void BeatDetection()
     {
@@ -19,7 +20,8 @@ public class BPMFinder : MonoBehaviour {
             beatTimer -= beatInterval;
             beatFull = true;
             beatCountFull++;
-            Debug.Log("Full");
+            barCounter++;
+            //Debug.Log("Full");
         }
 
         //div beat count
@@ -31,18 +33,18 @@ public class BPMFinder : MonoBehaviour {
             beatTimerDiv8 = beatInterval / 8;
             beatDiv8 = true;
             beatCountDiv8++;
-            Debug.Log("D8");
+            //Debug.Log("D8");
         }
     }
 
 	// Use this for initialization
 	void Start () {
-		
+        barCounter = 0;
 	}
 
-    public void Awake()
+    public float getBarCounter()
     {
-
+        return barCounter;
     }
 
     // Update is called once per frame
