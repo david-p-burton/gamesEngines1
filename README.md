@@ -17,6 +17,12 @@ FPSController
 
 audioAnalyser
 
+Help from tutorial;
+
+BPMFinder
+
+innerRoomWall
+
 
 ### Most Proud
 I am most proud of how the whole thing came together. When the bass kicks in in the song, I think its pretty cool how you can see the bass starting and stopping as per the song. I am also pleased with the camera movements as they turned out smooth and the location swapping based on bars of the song elapsed is also pretty nice.
