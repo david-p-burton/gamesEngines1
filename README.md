@@ -18,7 +18,7 @@ audioAnalyser
 I am most proud of how the whole thing came together. When the bass kicks in in the song, I think its pretty cool how you can see the bass starting and stopping as per the song. I am also pleased with the camera movements as they turned out smooth and the location swapping based on bars of the song elapsed is also pretty nice.
 
 ### Instructions
-
+So I developed this on a Windows 10 machine, but I attempted to demo this project on my Late 2013 MacbookPro. I had issues with the project once I opened it on the macbook due to version differences. If you are running this on a mac system, please checkout the macDemo branch and use that. If you are using a windows based system, use the master branch.
 
 ### Video
 
