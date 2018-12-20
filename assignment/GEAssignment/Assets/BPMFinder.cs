@@ -21,10 +21,8 @@ public class BPMFinder : MonoBehaviour {
             beatFull = true;
             beatCountFull++;
             barCounter++;
-            //Debug.Log("Full");
         }
 
-        //div beat count
         beatDiv8 = false;
         beatIntervalDiv8 = beatInterval / 8;
         beatTimerDiv8 += Time.deltaTime;
@@ -33,7 +31,6 @@ public class BPMFinder : MonoBehaviour {
             beatTimerDiv8 = beatInterval / 8;
             beatDiv8 = true;
             beatCountDiv8++;
-            //Debug.Log("D8");
         }
     }
 

@@ -37,12 +37,8 @@ public class particles : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
-        for (int i = 0; i < emittors.Length; i++)
-        {
-            //emittors[i];
-            //InvokeRepeating("DoEmit",1.0f, 3.0f);
-        }
+	void Update ()
+    {
         //1 + (AudioAnalyzer.bands[i] *
 
         //InvokeRepeating("DoEmit", 1.0f, 0);
@@ -50,7 +46,30 @@ public class particles : MonoBehaviour {
         for (int i = 0; i < emittors.Length; i++)
         {
             var emitSys = emittors[i].GetComponent<ParticleSystem>();
-            emitSys.Emit(Mathf.RoundToInt(1 + band[i] * scale));
+
+            int emissionSize = Mathf.RoundToInt(band[i] * scale);
+
+
+            if (emittors[i].name == "particleRed" || emittors[i].name == "particleRedCenter")
+            {
+                if (emissionSize < -0.1)
+                {
+                    emissionSize *= -1;
+                    emissionSize *= 10;
+                    emitSys.Emit(emissionSize);
+                    print(emissionSize + " This is red " + emittors[i].name);
+                }
+                else
+                {
+                    emissionSize *= 10;
+                    emitSys.Emit(emissionSize);
+                    print(emissionSize + " This is red " + emittors[i].name);
+                }
+            }
+            else if(emissionSize > 2)
+            {
+                emitSys.Emit(emissionSize);
+            }
         }
     }
 }
