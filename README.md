@@ -16,17 +16,17 @@ Of the assets in this project, here are the scripts taken from the course;
 FPSController, audioAnalyser
 
 
-Help from tutorial;
+Help from tutorial (these both have some modification to make them work for this project though);
 
 BPMFinder, innerRoomWall
 
 
 ### Most Proud
-I am most proud of how the whole thing came together. When the bass kicks in in the song, I think its pretty cool how you can see the bass starting and stopping as per the song. I am also pleased with the camera movements as they turned out smooth and the location swapping based on bars of the song elapsed is also pretty nice.
+I am most proud of how the whole thing came together. When the bass kicks in in the song, I think it’s pretty cool how you can see the bass starting and stopping as per the song. I am also pleased with the camera movements as they turned out smooth and the location swapping based on bars of the song elapsed is also pretty nice.
 
 
 ### Instructions
-So I developed this on a Windows 10 machine, but I attempted to demo this project on my Late 2013 MacbookPro. I had issues with the project once I opened it on the macbook due to version differences. If you are running this on a mac system, please checkout the macDemo branch and use that. If you are using a windows based system, use the master branch.
+So I developed this on a Windows 10 machine, but I attempted to demo this project on my Late 2013 MacbookPro. I had issues with the project once I opened it on the MacBook due to version differences. If you are running this on a mac system, please checkout the macDemo branch and use that. If you are using a windows-based system, use the master branch.
 
 
 ### Video
