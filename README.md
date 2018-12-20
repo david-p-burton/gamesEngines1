@@ -2,14 +2,14 @@
 
 ## Assignment Demo; Audio Responsive Particle System
 
-###Description
+### Description
 
-###Who Developed What?
+### Who Developed What?
 
-###Most Proud
+### Most Proud
 
-###Instructions
+### Instructions
 
-###Video
+### Video
 
 [![YouTube](http://img.youtube.com/vi/XZQKlqtfODk/0.jpg)](https://www.youtube.com/watch?v=XZQKlqtfODk)
