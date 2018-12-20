@@ -9,7 +9,6 @@ public class rotateCube : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        band = audioAnalyzer.bands;
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         
@@ -20,7 +19,7 @@ public class rotateCube : MonoBehaviour {
         Quaternion rotS = Quaternion.AngleAxis(1.5f * Mathf.Rad2Deg, Vector3.up);
 
 
-        cube.transform.localScale = new Vector3(50, 30, 50);
+        cube.transform.localScale = new Vector3(25, 25, 25);
         cube.transform.SetPositionAndRotation(posC, rotC);
 
         sphere.transform.localScale = new Vector3(30, 30, 30);
@@ -29,13 +28,14 @@ public class rotateCube : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        timeCount += Time.deltaTime * 100;
+        band = audioAnalyzer.bands;
+        timeCount += Time.deltaTime * 10;
         GameObject sphere = GameObject.Find("Sphere");
         GameObject cube = GameObject.Find("Cube");
 
         Vector3 newPosition = cube.transform.position + cube.transform.position - this.transform.position;
-        cube.transform.position = Quaternion.AngleAxis(timeCount, Vector3.forward) * new Vector3(100, 0f);
+        cube.transform.position = Quaternion.AngleAxis(timeCount, Vector3.forward) * new Vector3(250, 0f);
+        cube.transform.localScale = new Vector3(25, band[1] * 160, 25);
 
         sphere.transform.position = newPosition;
 

@@ -12,7 +12,8 @@ public class particles : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         spec = audioAnalyzer.spectrum;
         band = audioAnalyzer.bands;
         emittors = new GameObject[this.transform.childCount];
@@ -22,26 +23,10 @@ public class particles : MonoBehaviour {
             emittors[i] = this.transform.GetChild(i).gameObject;
         }
     }
-
-    void DoEmit()
-    {
-        //var emitParams = new ParticleSystem.EmitParams();
-        //system.Emit(emitParams, 1000);
-        //system.Play();
-
-        //for (int i = 0; i < emittors.Length; i++)
-        //{
-        //    var emitSys = emittors[i].GetComponent<ParticleSystem>();
-        //    emitSys.Emit(Mathf.RoundToInt(1 + band[i] * scale));
-        //}
-    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        //1 + (AudioAnalyzer.bands[i] *
-
-        //InvokeRepeating("DoEmit", 1.0f, 0);
 
         for (int i = 0; i < emittors.Length; i++)
         {
@@ -57,13 +42,13 @@ public class particles : MonoBehaviour {
                     emissionSize *= -1;
                     emissionSize *= 10;
                     emitSys.Emit(emissionSize);
-                    print(emissionSize + " This is red " + emittors[i].name);
+                    //print(emissionSize + " This is red " + emittors[i].name);
                 }
                 else
                 {
                     emissionSize *= 10;
                     emitSys.Emit(emissionSize);
-                    print(emissionSize + " This is red " + emittors[i].name);
+                    //print(emissionSize + " This is red " + emittors[i].name);
                 }
             }
             else if(emissionSize > 2)

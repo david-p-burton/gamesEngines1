@@ -61,18 +61,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\audioAnalyser2.cs" />
     <Compile Include="Assets\audioAnalyzer.cs" />
-    <Compile Include="Assets\audioVisualizer.cs" />
     <Compile Include="Assets\BPMFinder.cs" />
     <Compile Include="Assets\cameraRotation.cs" />
     <Compile Include="Assets\FPSController.cs" />
-    <Compile Include="Assets\gameSetUp.cs" />
     <Compile Include="Assets\holderMovement.cs" />
     <Compile Include="Assets\innerRoomWall.cs" />
     <Compile Include="Assets\particles.cs" />
     <Compile Include="Assets\rotateCube.cs" />
-    <Compile Include="Assets\rotateSphere.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/GitHub/gamesEngines1/gamesEngines1/assignment/GEAssignment/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
