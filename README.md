@@ -11,7 +11,9 @@ The system rotates slowly around the centre of the scene. Particles are emitted 
 
 ### Who Developed What?
 Of the assets in this project, here are the scripts taken from the course;
+
 FPSController
+
 audioAnalyser
 
 ### Most Proud
